@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- high chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+  </head>
+  <body style="background-color: #2f1717;">
+    <header>
+        <div class="container">
+            <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #892e2e;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"> <img src="logo.png" style="width:50px;height:50px;">Quatar 2022 </a>
+
+                  
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            </div>
+            <div class="row mt-5">
+                <div class="col d-flex justify-content-center">
+                    <img src="logo.png" style="width:300px;height:350px;">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        
+        <div class="row mt-5">
+            <!-- table one -->
+            <div class="col col-lg-3">
+                <div class="container">
+                    <!-- start of table -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="container mt-3">
+                                <table class="table table-dark table-striped" id="display_1">
+                                    <thead>
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Group A</th>
+                                            <th scope="col">
+                                                <div class="row mt-3">
+                                                    <div class="col">
+                                                        <button class="btn btn-secondary" id="grt1">Insert</button>
+                                                        <button class="btn btn-secondary" id="gr1"> Chart </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Input box -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input id="team_1" type="text" placeholder="Enter Team">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <input id="ptn_1" type="number" placeholder="Enter Point">
+                                                    </div>
+                                                </div>
+                                                <!-- end of Input box -->
+                                            </th>
+                                        </tr>
+
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Team</th>
+                                            <th scope="col">Pts</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+            <!-- table two-->
+            <div class="col col-lg-3">
+                <div class="container">
+                    <!-- start of table -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="container mt-3">
+                                <table class="table table-dark table-striped" id="display_2">
+                                    <thead>
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Group B</th>
+                                            <th scope="col">
+                                                <div class="row mt-3">
+                                                    <div class="col">
+                                                        <button class="btn btn-secondary" id="grt2">Insert</button>
+                                                        <button class="btn btn-secondary" id="gr2"> Chart </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Input box -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input id="team_2" type="text" placeholder="Enter Team">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <input id="ptn_2" type="number" placeholder="Enter Point">
+                                                    </div>
+                                                </div>
+                                                <!-- end of Input box -->
+                                            </th>
+                                        </tr>
+
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Team</th>
+                                            <th scope="col">Pts</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+
+            
+            <!-- table three-->
+            <div class="col col-lg-3">
+                <div class="container">
+                    <!-- start of table -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="container mt-3">
+                                <table class="table table-dark table-striped" id="display_3">
+                                    <thead>
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Group C</th>
+                                            <th scope="col">
+                                                <div class="row mt-3">
+                                                    <div class="col">
+                                                        <button class="btn btn-secondary" id="grt3">Insert</button>
+                                                        <button class="btn btn-secondary" id="gr3"> Chart </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Input box -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input id="team_3" type="text" placeholder="Enter Team">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <input id="ptn_3" type="number" placeholder="Enter Point">
+                                                    </div>
+                                                </div>
+                                                <!-- end of Input box -->
+                                            </th>
+                                        </tr>
+
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Team</th>
+                                            <th scope="col">Pts</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+
+            
+            <!-- table four -->
+            <div class="col col-lg-3">
+                <div class="container">
+                    <!-- start of table -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="container mt-3">
+                                <table class="table table-dark table-striped" id="display_4">
+                                    <thead>
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Group D</th>
+                                            <th scope="col">
+                                                <div class="row mt-3">
+                                                    <div class="col">
+                                                        <button class="btn btn-secondary" id="grt4">Insert</button>
+                                                        <button class="btn btn-secondary" id="gr4"> Chart </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Input box -->
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input id="team_4" type="text" placeholder="Enter Team">
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2">
+                                                    <div class="col">
+                                                        <input id="ptn_4" type="number" placeholder="Enter Point">
+                                                    </div>
+                                                </div>
+                                                <!-- end of Input box -->
+                                            </th>
+                                        </tr>
+
+                                        <tr class="table table-dark table-striped">
+                                            <th scope="col">Team</th>
+                                            <th scope="col">Pts</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+
+        <!-- chart -->
+        <div class="row">
+            <div class="col mx-5 my-2">
+                <p>
+                    <a class="btn btn-secondary" data-bs-toggle="collapse" href="#chart_" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        Chart
+                    </a>
+                  </p>
+                  <div class="collapse" id="chart_">
+                    <div class="card card-body">                             
+                        <div class="container">
+                            <figure class="highcharts-figure">
+                                <div id="container"></div>
+                                <button id="plain">Plain</button>
+                                <button id="inverted">Inverted</button>
+                                <button id="polar">Polar</button>
+                            </figure>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="row"> <section class="">
+            <!-- Footer -->
+            <footer class="text-center text-white" style="background-color: #892e2e;">
+              <!-- Grid container -->
+              <div class="container p-4 pb-0">
+                <!-- Section: CTA -->
+                <section class="">
+                  <p class="d-flex justify-content-center align-items-center">
+                    <span class="me-3">World Cup 2022</span>
+                    <button type="button" class="btn btn-outline-light btn-rounded">
+                      Sign up!
+                    </button>
+                  </p>
+                </section>
+                <!-- Section: CTA -->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                World Cup:
+                <a class="text-white" href="#">Quatar 2022.com</a>
+              </div>
+              <!-- Copyright -->
+            </footer>
+            <!-- Footer -->
+          </section>
+        </div>
+    </main>
+
+  </body>
+    
+   
+    <script src="script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script> 
+
+
+    
+    
+</html>
+
